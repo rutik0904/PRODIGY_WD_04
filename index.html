@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Kaalix Studio – Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header" id="top">
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">
+                <span class="nav-logo-mark">A</span>
+                <span class="nav-logo-text">Atharv Baraskar</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME -->
+    <section class="section hero" id="home">
+        <div class="hero-content">
+            <p class="hero-kicker">Web developer & problem solver</p>
+            <h1>Building clean, thoughtful experiences for the web.</h1>
+            <p class="hero-text">
+                Front‑end focused full‑stack developer who enjoys turning ideas into
+                fast, accessible interfaces using HTML, CSS, JavaScript and modern tools.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary">View selected work</a>
+                <a href="#contact" class="btn ghost">Let’s collaborate</a>
+            </div>
+            <div class="hero-meta">
+                <span>HTML · CSS · JavaScript</span>
+                <span>React · Node.js · MongoDB</span>
+            </div>
+        </div>
+
+       
+        <aside class="hero-side">
+            <div class="profile-card">
+                <div class="avatar-circle">
+                   
+                    <img src="images/Profile.jpeg" alt="Atharv Arun Baraskar">
+                </div>
+                <h2 class="hero-name">Atharv Arun Baraskar</h2>
+            </div>
+        </aside>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+        <div class="section-header">
+            <h2>Skills & tools</h2>
+            <p>Technologies I enjoy working with right now.</p>
+        </div>
+
+        <div class="skills-icon-grid">
+            <div class="skill-icon-card">
+                <img src="icons/html.png" alt="HTML" />
+                <span class="sr-only">HTML</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/css.png" alt="CSS" />
+                <span class="sr-only">CSS</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/js.png" alt="JavaScript" />
+                <span class="sr-only">JavaScript</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/react.png" alt="React" />
+                <span class="sr-only">React</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/node.png" alt="Node.js" />
+                <span class="sr-only">Node.js</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/mongo.png" alt="MongoDB" />
+                <span class="sr-only">MongoDB</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/git.png" alt="Git and GitHub" />
+                <span class="sr-only">Git & GitHub</span>
+            </div>
+            <div class="skill-icon-card">
+                <img src="icons/vscode.jpg" alt="VS Code" />
+                <span class="sr-only">VS Code</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+        <div class="section-header">
+            <h2>Selected projects</h2>
+            <p>A few focused projects that demonstrate my approach to the front‑end and full‑stack work.</p>
+        </div>
+        <div class="grid projects-grid">
+            <article class="card project-card">
+                <div class="pill">Web app</div>
+                <h3>GreenCommute</h3>
+                <div class="project-image">
+                    <img src="images/greencommute.png" alt="GreenCommute landing page screenshot">
+                </div>
+                <p>
+                    Landing page that explains how ride‑sharing can reduce traffic and pollution,
+                    with smooth scrolling navigation and responsive layout.
+                </p>
+                <ul>
+                    <li>Sticky navigation with active section highlight</li>
+                    <li>Structured sections: problem, solution, how it works</li>
+                    <li>Built with HTML and modern CSS only</li>
+                </ul>
+            </article>
+
+            <article class="card project-card">
+                <div class="pill">Mini tool</div>
+                <h3>Kaalix Timer</h3>
+                <div class="project-image">
+                    <img src="images/kaalix-timer.png" alt="Kaalix Timer stopwatch screenshot">
+                </div>
+                <p>
+                    Browser‑based stopwatch featuring start, pause, reset and lap history for
+                    coding practice or short workout sessions.
+                </p>
+                <ul>
+                    <li>Tabular‑numeric time display with milliseconds</li>
+                    <li>Lap list with instant updates</li>
+                    <li>Accessible keyboard‑friendly buttons</li>
+                </ul>
+            </article>
+
+            <article class="card project-card">
+                <div class="pill">Game</div>
+                <h3>Kaalix Play</h3>
+                <div class="project-image">
+                    <img src="images/kaalix-play.png" alt="Kaalix Play tic‑tac‑toe screenshot">
+                </div>
+                <p>
+                    Tic‑tac‑toe game with both 2‑player mode and an AI opponent that chooses
+                    smart but beatable moves.
+                </p>
+                <ul>
+                    <li>Clean 3×3 grid using CSS Grid</li>
+                    <li>Scoreboard for wins and draws</li>
+                    <li>Simple AI with winning‑move logic</li>
+                </ul>
+            </article>
+
+            <article class="card project-card">
+                <div class="pill">Full‑stack</div>
+                <h3>HealthCare Hub</h3>
+                <div class="project-image">
+                    <img src="images/healthcare-hub.png" alt="HealthCare Hub web app screenshot">
+                </div>
+                <p>
+                    Health‑focused web application that helps users track wellness information,
+                    explore services, and interact with simple AI‑driven suggestions.
+                </p>
+                <ul>
+                    <li>Built with React, Node.js, Express and MongoDB</li>
+                    <li>User authentication and structured health data</li>
+                    <li>Responsive UI with clear navigation and forms</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-alt" id="about">
+        <div class="about-layout">
+            <div>
+                <div class="section-header left">
+                    <h2>About me</h2>
+                    <p>A short story of how coding became part of my everyday life.</p>
+                </div>
+                <p>
+                    I am Atharv Arun Baraskar, currently pursuing a B.E. in engineering, focusing on web
+                    development and building practical projects that solve everyday problems for students and commuters.
+                </p>
+                <p>
+                    I enjoy working end‑to‑end: designing interfaces, structuring HTML, styling with CSS,
+                    and wiring up interactive behavior with JavaScript.
+                </p>
+                <p>
+                    Outside of assignments, I spend time learning new tools, debugging side projects and
+                    reading about system design, cloud and developer workflows.
+                </p>
+            </div>
+            <aside class="about-note">
+                <h3>Education & experience</h3>
+                <ul>
+                    <li>3rd year Engineering Student · Web development focus</li>
+                    <li>Internship projects: landing page, stopwatch, tic‑tac‑toe, portfolio</li>
+                    <li>Hands‑on experience with React, Node.js and MongoDB through HealthCare Hub</li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+        <div class="section-header">
+            <h2>Let’s connect</h2>
+            <p>Available for internship opportunities, project collaborations and portfolio feedback.</p>
+        </div>
+        <div class="contact-layout">
+            <form class="contact-form">
+                <label>
+                    Name
+                    <input type="text" placeholder="Your full name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" placeholder="you@example.com" required>
+                </label>
+                <label>
+                    Message
+                    <textarea rows="4" placeholder="Tell me about your project or question" required></textarea>
+                </label>
+                <button type="submit" class="btn primary full">Send message</button>
+            </form>
+            <aside class="contact-note">
+                <h3>Contact details</h3>
+                <p>Use the form or reach out directly:</p>
+                <ul>
+                    <li>Name: Atharv Arun Baraskar</li>
+                    <li>Email: <a href="mailto:atharvbaraskar@gmail.com">atharvbaraskar@gmail.com</a></li>
+                    <li>Location: Pune, Maharashtra, India</li>
+                    <li>GitHub: <a href="https://github.com/XROY28">Atharv Baraskar</a></li>
+                </ul>
+            </aside>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Atharv Arun Baraskar · Personal portfolio website.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
