@@ -1,46 +1,43 @@
+// Mobile Navigation Toggle
+const navToggle = document.getElementById("navToggle");
+const navList = document.getElementById("navList");
 
-const navToggle = document.getElementById('navToggle');
-const navList = document.getElementById('navList');
-const nav = document.getElementById('nav');
-const links = document.querySelectorAll('.nav-link');
-
-navToggle.addEventListener('click', () => {
-    navToggle.classList.toggle('active');
-    navList.classList.toggle('show');
+navToggle.addEventListener("click", () => {
+  navList.classList.toggle("show");
 });
 
+// Close mobile menu when link clicked
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    navList.classList.remove("show");
+  });
+});
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
+// Active Link Highlight on Scroll
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 150;
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
     }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
 });
 
-
-const sections = document.querySelectorAll('section[id]');
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            const link = document.querySelector(`.nav-link[href="#${id}"]`);
-            if (!link) return;
-            if (entry.isIntersecting) {
-                links.forEach(l => l.classList.remove('active'));
-                link.classList.add('active');
-            }
-        });
-    },
-    { rootMargin: '-55% 0px -40% 0px', threshold: 0.1 }
-);
-
-sections.forEach(section => observer.observe(section));
-
-
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        navToggle.classList.remove('active');
-        navList.classList.remove('show');
-    });
+// Simple Contact Form Handling
+document.querySelector(".contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Message sent successfully! 🚀");
+  this.reset();
 });
